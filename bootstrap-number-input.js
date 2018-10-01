@@ -51,10 +51,10 @@
 			}
 
 			var group = $("<div class='input-group'></div>");
-			var down = $("<button type='button'>" + settings.downText + "</button>").attr('class', 'btn btn-' + settings.downClass).click(function() {
+			var down = $("<button type='button'>" + settings.downText + "</button>").attr('class', 'btn btn-number-minus btn-' + settings.downClass).click(function() {
 				setText(parseInt(clone.val() || clone.attr('value')) - step);
 			});
-			var up = $("<button type='button'>" + settings.upText + "</button>").attr('class', 'btn btn-' + settings.upClass).click(function() {
+			var up = $("<button type='button'>" + settings.upText + "</button>").attr('class', 'btn btn-number-plus btn-' + settings.upClass).click(function() {
 				setText(parseInt(clone.val() || clone.attr('value')) + step);
 			});
 			$("<span class='input-group-btn'></span>").append(down).appendTo(group);
